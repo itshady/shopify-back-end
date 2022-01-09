@@ -1,34 +1,40 @@
 # Hady Ibrahim's Shopify's Backend Developer Intern - Summer 2022 Submission
-# Requirements
+## Requirements
 * WSL2
 * Docker
 * Docker-compose
 * MySQL Workbench
-# Installation
-## Installing Docker and WSL2
-#### If you are on a windows, you will need WSL2 because Docker must be run on a linux OS
+## Installation
+### Installing Docker and WSL2
+If you are on a windows, you will need WSL2 because Docker must be run on a linux OS
 [WSL2 Installation](https://docs.microsoft.com/en-us/windows/wsl/install)
 
-#### Next download docker desktop and get it running so docker works on your linux
+Next download docker desktop and get it running so docker works on your linux
 [Docker Desktop Installation](https://docs.docker.com/get-docker/)
 
-## Installing Docker-Compose
+### Installing Docker-Compose
 The current Docker Desktop install should come with docker-compose. Check this by typing:
-> docker-compose -v
-
+```console
+docker-compose -v
+```
 If it isn't installed, follow [Docker Compose Installation](https://docs.docker.com/compose/install/)
 
-## Installing MySQL Workbench
+### Installing MySQL Workbench
 [MySQL Workbench Installation](https://dev.mysql.com/downloads/workbench/)
 
 You could use any database UI if you already have one installed.
 
-# Setup
-## Setting up the Database
+## Setup
+### Clone the repo
+```console
+git clone https://github.com/itshady/shopify-back-end.git
+```
+### Setting up the Database
 #### Starting the web app
-cd into the repo folder and run
-> docker-compose up -d
-
+```console
+cd shopify-back-end
+docker-compose up -d
+```
 #### Importing the database
 Open MySQL Workbench and add a new connection with the following data:
 * Connection Name: "Anything you want to name it"
@@ -43,5 +49,5 @@ Open MySQL Workbench and add a new connection with the following data:
 2. Click "Import from self-contained file" and browse to the shopify.sql file
 3. Click Start Import
 
-## Finish
+### Finish
 Now that the database is important and the web app is up and running, just navigate to the [shopify folder](http://localhost:8100/shopify/) and it should be good to go!
