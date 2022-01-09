@@ -1,6 +1,5 @@
 # Hady Ibrahim's Shopify's Backend Developer Intern - Summer 2022 Submission
 ## Requirements
-* WSL2
 * Docker
 * Docker-compose
 * MySQL Workbench
