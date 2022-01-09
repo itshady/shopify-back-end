@@ -1,23 +1,25 @@
 # Hady Ibrahim's Shopify's Backend Developer Intern - Summer 2022 Submission
 ## Installing Docker and WSL2
-** If you are on a windows, you will need WSL2 because Docker must be run on a linux OS **
-Download WSL2 following [WSL2 Installation](https://docs.microsoft.com/en-us/windows/wsl/install)
+#### If you are on a windows, you will need WSL2 because Docker must be run on a linux OS
+[WSL2 Installation](https://docs.microsoft.com/en-us/windows/wsl/install)
 
-** Next download docker desktop and get it running so docker works on your linux **
+#### Next download docker desktop and get it running so docker works on your linux
 [Docker Desktop Installation](https://docs.docker.com/get-docker/)
 
 ## Installing Docker-Compose
-With the current Docker Desktop install, it should come with docker-compose. Check this by typing:
+The current Docker Desktop install should come with docker-compose. Check this by typing:
 > docker-compose -v
+
 If it isn't installed, follow [Docker Compose Installation](https://docs.docker.com/compose/install/)
 
 ## Installing MySQL Workbench
-Follow [MySQL Workbench Installation](https://dev.mysql.com/downloads/workbench/)
+[MySQL Workbench Installation](https://dev.mysql.com/downloads/workbench/)
+
 You could use any database UI if you already have one installed.
 
 ## Setting up the Database
 #### Starting the web app
-cd into the repo folder and do
+cd into the repo folder and run
 > docker-compose up -d
 
 #### Importing the database
