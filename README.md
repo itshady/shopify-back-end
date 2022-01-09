@@ -1,10 +1,11 @@
 # Hady Ibrahim's Shopify's Backend Developer Intern - Summer 2022 Submission
 ## Requirements
+* WSL2 (Windows only)
 * Docker
 * Docker-compose
 * MySQL Workbench
 ## Installation
-### Installing Docker and WSL2
+### Installing Docker
 If you are on a windows, you will need [install WSL2](https://docs.microsoft.com/en-us/windows/wsl/install) because Docker must be run on a linux OS
 
 Next download [Docker Desktop](https://docs.docker.com/get-docker/) and get it running so docker works on your linux
