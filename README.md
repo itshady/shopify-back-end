@@ -48,4 +48,4 @@ Open MySQL Workbench and add a new connection with the following data:
 3. Click Start Import
 
 ### Finish
-Now that the database is important and the web app is up and running, just navigate to the [shopify folder](http://localhost:8100/shopify/) and it should be good to go!
+Now that the database is important and the web app is up and running, just navigate to http://localhost:8100/shopify/ and it should be good to go!
