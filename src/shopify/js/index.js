@@ -32,16 +32,15 @@ $(document).on("click", "#addInventoryModal #save", function (e) {
   var price = $("#addInventoryModal #price").val()
   
   var xhttp = new XMLHttpRequest(); //Making a new request to another page
+  xhttp.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) { //If state is correct and it doesn't error (404)
+      location.reload()
+    }
+  }
   xhttp.open("POST", "./api/inventory.php?product_id="+product_id+"&warehouse_id="+warehouse_id+"&quantity="+quantity+"&price="+price) //Declaring the method and the file name of which we want to go to
   xhttp.send(); //Sending to file
 
   $('#addInventoryModal').modal('hide');
-
-  //wait 100ms then reload page
-  setTimeout(function () {
-    location.reload()
-  }, 100);
-  
 
 });
 
