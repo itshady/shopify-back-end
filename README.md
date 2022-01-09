@@ -6,11 +6,9 @@
 * MySQL Workbench
 ## Installation
 ### Installing Docker and WSL2
-If you are on a windows, you will need WSL2 because Docker must be run on a linux OS
-[WSL2 Installation](https://docs.microsoft.com/en-us/windows/wsl/install)
+If you are on a windows, you will need [install WSL2](https://docs.microsoft.com/en-us/windows/wsl/install) because Docker must be run on a linux OS
 
-Next download docker desktop and get it running so docker works on your linux
-[Docker Desktop Installation](https://docs.docker.com/get-docker/)
+Next download [Docker Desktop](https://docs.docker.com/get-docker/) and get it running so docker works on your linux
 
 ### Installing Docker-Compose
 The current Docker Desktop install should come with docker-compose. Check this by typing:
