@@ -35,13 +35,13 @@ docker-compose up -d
 ```
 #### Importing the database
 Open MySQL Workbench and add a new connection with the following data:
-* Connection Name: "Anything you want to name it"
+* Connection Name: _Anything you want to name it_
 * Connection Method: Standard (TCP/IP)
 * Hostname: 127.0.0.1
 * Port: 3306
 * Username: root
 * Password: password (only if it asks for a password, else store this in vault)
-* Default Schema: shopify
+* Default Schema: _Leave this empty_
 
 1. Next, enter the newly made connection and find Server>Data Import.
 2. Click "Import from self-contained file" and browse to the shopify.sql file
