@@ -1,4 +1,7 @@
 # Hady Ibrahim's Shopify's Backend Developer Intern - Summer 2022 Submission
+# API Reference
+
+# Usage
 ## Requirements
 * WSL2 (Windows only)
 * Docker
