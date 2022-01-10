@@ -1,5 +1,7 @@
 <?php
-    require("./api/functions.php");
+    require("./api/warehouse/functions.php");
+    require("./api/product/functions.php");
+    require("./api/inventory/functions.php");
 ?>
 
 <!DOCTYPE html>

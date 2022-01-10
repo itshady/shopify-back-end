@@ -5,7 +5,7 @@ $(document).on("click", "#addWarehouseModal #save", function (e) {
   var country = $("#addWarehouseModal #warehouse_country").val()
   
   var xhttp = new XMLHttpRequest(); //Making a new request to another page
-  xhttp.open("POST", "./api/warehouse.php?address="+address+"&city="+city+"&country="+country) //Declaring the method and the file name of which we want to go to
+  xhttp.open("POST", "./api/warehouse/?address="+address+"&city="+city+"&country="+country) //Declaring the method and the file name of which we want to go to
   xhttp.send(); //Sending to file
 
   $('#addWarehouseModal').modal('hide');
@@ -17,7 +17,7 @@ $(document).on("click", "#addProductModal #save", function (e) {
   var product_name = $("#addProductModal #product_name").val()
   
   var xhttp = new XMLHttpRequest(); //Making a new request to another page
-  xhttp.open("POST", "./api/product.php?product_name="+product_name) //Declaring the method and the file name of which we want to go to
+  xhttp.open("POST", "./api/product/?product_name="+product_name) //Declaring the method and the file name of which we want to go to
   xhttp.send(); //Sending to file
 
   $('#addProductModal').modal('hide');
@@ -32,7 +32,7 @@ $(document).on("click", "#addInventoryModal #save", function (e) {
   var price = $("#addInventoryModal #price").val()
   
   var xhttp = new XMLHttpRequest(); //Making a new request to another page
-  xhttp.open("POST", "./api/inventory.php?product_id="+product_id+"&warehouse_id="+warehouse_id+"&quantity="+quantity+"&price="+price) //Declaring the method and the file name of which we want to go to
+  xhttp.open("POST", "./api/inventory/?product_id="+product_id+"&warehouse_id="+warehouse_id+"&quantity="+quantity+"&price="+price) //Declaring the method and the file name of which we want to go to
   xhttp.send(); //Sending to file
 
   $('#addInventoryModal').modal('hide');
@@ -58,7 +58,7 @@ $(document).on("click", "#addinventory", function (e) {
       });
     }
   }
-  xhttp.open("GET", "./api/warehouse.php") //Declaring the method and the file name of which we want to go to
+  xhttp.open("GET", "./api/warehouse") //Declaring the method and the file name of which we want to go to
   xhttp.send(); //Sending to file
 
 
@@ -73,7 +73,7 @@ $(document).on("click", "#addinventory", function (e) {
       });
     }
   }
-  xhttp.open("GET", "./api/product.php") //Declaring the method and the file name of which we want to go to
+  xhttp.open("GET", "./api/product") //Declaring the method and the file name of which we want to go to
   xhttp.send(); //Sending to file
 
 });
@@ -107,7 +107,7 @@ $(document).on("click", ".sub-inventory", function (e) {
           });
         }
       }
-      xhttp.open("GET", "./api/warehouse.php") //Declaring the method and the file name of which we want to go to
+      xhttp.open("GET", "./api/warehouse") //Declaring the method and the file name of which we want to go to
       xhttp.send(); //Sending to file
     
     
@@ -123,7 +123,7 @@ $(document).on("click", ".sub-inventory", function (e) {
           });
         }
       }
-      xhttp.open("GET", "./api/product.php") //Declaring the method and the file name of which we want to go to
+      xhttp.open("GET", "./api/product") //Declaring the method and the file name of which we want to go to
       xhttp.send(); //Sending to file
 
       $("#editInventoryModal #price").val(item['price'])
@@ -132,7 +132,7 @@ $(document).on("click", ".sub-inventory", function (e) {
     }
   }
 
-  xhttp.open("GET", "./api/inventory.php?inventory_id="+inventory_id); //Declaring the method and the file name of which we want to go to
+  xhttp.open("GET", "./api/inventory/?inventory_id="+inventory_id); //Declaring the method and the file name of which we want to go to
   xhttp.send(); //Sending to file
 
 
@@ -144,7 +144,7 @@ $(document).on("click", "#editInventoryModal #delete", function (e) {
   $("#"+inventory_id).parent().remove();
 
   var xhttp = new XMLHttpRequest(); //Making a new request to another page
-  xhttp.open("DELETE", "./api/inventory.php?inventory_id="+inventory_id); //Declaring the method and the file name of which we want to go to
+  xhttp.open("DELETE", "./api/inventory/?inventory_id="+inventory_id); //Declaring the method and the file name of which we want to go to
   xhttp.send(); //Sending to file
 });
 
@@ -163,7 +163,7 @@ $(document).on("click", "#editInventoryModal #edit", function (e) {
     }
   }
   
-  xhttp.open("PUT", "./api/inventory.php?inventory_id="+inventory_id+"&warehouse_id="+warehouse_id+"&price="+price+"&quantity="+quantity); //Declaring the method and the file name of which we want to go to
+  xhttp.open("PUT", "./api/inventory/?inventory_id="+inventory_id+"&warehouse_id="+warehouse_id+"&price="+price+"&quantity="+quantity); //Declaring the method and the file name of which we want to go to
   xhttp.send(); //Sending to file
 
   $('#editInventoryModal').modal('hide');

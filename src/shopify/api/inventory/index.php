@@ -1,5 +1,6 @@
 <?php
   require("./functions.php");
+  include_once __DIR__ ."/../warehouse/functions.php";
 
   if ($_SERVER['REQUEST_METHOD'] == "POST") {
     //adding a new warehouse
