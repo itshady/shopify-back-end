@@ -1,5 +1,5 @@
 # Hady Ibrahim's Shopify's Backend Developer Intern - Summer 2022 Submission
-# API Reference
+# API Documentation
 [Google Doc of API reference](https://docs.google.com/document/d/18XQipdZLS3xYvCblLp-VCyPIIubLQcek36s1ZngqP2M/edit?usp=sharing)
 # Usage
 ## Requirements
